@@ -14,3 +14,13 @@ public class GreetingResource {
         return "Hello RESTEasy Quarkus Java Test Answer: Pilot for new answers";
     }
 }
+
+@Path("/hello-newcall")
+public class GreetingResource {
+
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    public String hello() {
+        return "Hello NewCall Quarkus Java Test Answer: Pilot for new answers";
+    }
+}
