@@ -16,6 +16,10 @@ public class GreetingResourceTest {
           .then()
              .statusCode(200)
              .body(is("Hello RESTEasy Quarkus Java Test Answer: Pilot for new answers"));
+          .when().get("/hello-newcall")
+          .then()
+             .statusCode(200)
+             .body(is("Hello NewCall Quarkus Java Test Answer: Pilot for new answers"));
     }
 
 }
