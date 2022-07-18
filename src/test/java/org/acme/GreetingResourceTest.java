@@ -15,7 +15,7 @@ public class GreetingResourceTest {
           .when().get("/hello-resteasy")
           .then()
              .statusCode(200)
-             .body(is("Hello RESTEasy Quarkus Java Test Answer"));
+             .body(is("Hello RESTEasy Quarkus Java Test Answer: Pilot for new answers"));
     }
 
 }
