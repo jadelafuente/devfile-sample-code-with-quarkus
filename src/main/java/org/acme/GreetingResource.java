@@ -16,11 +16,11 @@ public class GreetingResource {
 }
 
 @Path("/hello-newcall")
-public class GreetingResource {
+public class GreetingResourceNewCall {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    public String hello() {
+    public String helloNewCall() {
         return "Hello NewCall Quarkus Java Test Answer: Pilot for new answers";
     }
 }
